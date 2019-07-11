@@ -1,0 +1,38 @@
+import re
+x = input("Enter an input")    #INPUT CONTAINS INT OR FLOAT
+
+if x.isdigit():
+    x = eval(x)
+    if int(x) % 2 == 0:
+        print("{} is an even int".format(x))
+    else:
+        print("{} is an odd int".format(x))
+
+elif re.match(r'[.]'+$, x):
+    print("float")
+
+
+
+elif x.isdigit() == 0:
+    print("{} IS A STRING".format(x))
+    p = x.upper()
+    print("1 - CONVERTED TO UPPER CASE : {}".format(p))
+    p = x.lower()
+    print("2 - CONVERTED TO LOWER CASE : {}".format(p))
+    p = x.title()
+    print("3 - CONVERTED TO CAPITALISED CASE : {}".format(p))
+    p = len(x)
+    print("4 - LENGTH OF STRING IS : {}".format(p))
+    res = len(x.split())
+    print("5 - NO OF WORDS IN A STRING ARE : " + str(res))
+
+
+
+
+
+
+
+
+
+
+
