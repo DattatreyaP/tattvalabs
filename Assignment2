@@ -1,19 +1,18 @@
 import re
 x = input("Enter an input")    #INPUT CONTAINS INT OR FLOAT
 
+#a = 'x'
+
 if x.isdigit():
-    x = eval(x)
     if int(x) % 2 == 0:
         print("{} is an even int".format(x))
     else:
         print("{} is an odd int".format(x))
 
-elif re.match(r'[.]'+$, x):
-    print("float")
+elif re.search(r"[.]", x):
+    print("Float")
 
-
-
-elif x.isdigit() == 0:
+else:
     print("{} IS A STRING".format(x))
     p = x.upper()
     print("1 - CONVERTED TO UPPER CASE : {}".format(p))
@@ -25,6 +24,14 @@ elif x.isdigit() == 0:
     print("4 - LENGTH OF STRING IS : {}".format(p))
     res = len(x.split())
     print("5 - NO OF WORDS IN A STRING ARE : " + str(res))
+    if x.isalnum():
+        print("6 - {} HAS ALPHANUMERIC".format(x))
+    else:
+        print("6 -{}HAS NO ALPHANUMERIC".format(x))
+    if re.match(r"[!@#$%^&*()_+/*-{};'.,/]*$", x):
+        print("7 - {} HAS SPECIAL CHARACTERS".format(x))
+    else:
+        print("7 - {} HAS NO SPECIAL CHARACTERS".format(x))
 
 
 
