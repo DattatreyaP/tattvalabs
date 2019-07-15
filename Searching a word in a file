@@ -1,0 +1,16 @@
+import pandas as pd
+
+df = pd.read_csv("books.csv")
+
+data = False
+
+df.dropna(inplace = True)
+
+inp = input("Enter a string")
+
+data = df[df['Author'].str.match(inp)]
+
+print(data)
+
+
+
